@@ -94,8 +94,6 @@ CREATE TABLE IF NOT EXISTS `cliente` (
 INSERT INTO `cliente` (`id_cliente`, `id_usuario`, `id_grupo`, `nome`, `nascimento`, `cpfcnpj`, `rg`, `inscricao`, `endereco`, `numero`, `complemento`, `bairro`, `cidade`, `uf`, `pais`, `telefone`, `cep`, `email`, `bloqueado`, `enviado`) VALUES
 (9, 0, 6, 'ROBERTO SANTOS', '1992-07-12', '79.787.878/7897-89', 'MG-12413567', '', 'RUA A', 19, 'CASA', 'CENTRO', 'VICOSA', 'MG', '', '(31) 7979-7897', '36570-000', 'vendasml705@gmail.com', 'N', 0),
 (10, 0, 1, 'ROBERTO', '1992-07-14', '90.898.908/9899-08', 'MG-12.436.139', '', 'RUA A', 19, 'CASA', 'CENTRO', 'VIÇOSA', 'MG', '', '(31) 89787-8798', '36570-000', 'vendasml705@gmail.com', 'N', 0),
-(11, 0, 1, 'EDUARDO', '1979-10-10', '306.925.187-85', '3312100588', '', 'RUA SERRA DE BOTUCATU', 2585, '', '', 'SÃO PAULO', '', '', '', '03406-000', 'eduardoroque10@gmail.com', 'S', 0),
-(13, 0, 5, 'MAD DOG', '2011-11-11', '11.111.111/1111-11', '11111111111', 'aaaaaaaa', 'AAAAAAAAAAAAAAAAAA', 11, '', '', '', '', '', '(21) 99999-9999', '99999-999', 'maddog@caodeoculos.com', 'N', 0),
 (14, 0, 5, 'MARIA TERESESA', '2001-01-01', '22.222.222/2222-22', '9999999999', '', 'ZZZZZZZZZZ', 11, '', '', 'ZZZZZZZZZ', 'ZZ', '', '(21) 99999-9999', '99999-999', 'maria@terezaaaaa.com', 'N', 0),
 (15, 0, 1, 'MURILO', '1111-11-11', '99.999.999/9999-99', '11111111', '', 'AAAAAAAAAAAA', 11111111, '', '', 'AAAAAAAAAA', 'AA', 'aaaaaaaa', '', '11111-111', 'aaa@aaa.com', 'N', 0),
 (18, 0, 1, 'BRUNA', '1111-11-11', '99.999.999/9999-99', '9999999999999', '111111111111', 'AAAAAAAAAAAAAA', 1111, '', '', 'AAAAAAAAA', 'AA', 'aaaaaaaa', '', '11111-111', 'aaa@aaa.com', 'N', 0),
@@ -151,7 +149,7 @@ CREATE TABLE IF NOT EXISTS `config` (
 --
 
 INSERT INTO `config` (`id`, `nome`, `fantasia`, `url`, `email`, `cpf`, `endereco`, `numero`, `bairro`, `cidade`, `uf`, `cep`, `logo`, `receber`, `dias`, `multa_atraso`, `juro`, `protesto`, `demo1`, `demo2`, `demo3`, `demo4`, `qnt`) VALUES
-(1, 'PL Golfe Clube', 'PL GOLFE CLUBE2', 'http://www.plgc.com.br/boletos', 'plgc@plgc.com.br', '7.374.616/0001-96', 'Av. Pl do Brasil', '4594', 'Pirituba', 'Arujá', 'SP', '07400-000', '63104a35bbb46f5.png', '3', '5', '0', '0,5', 2, 'Sr. Caixa, cobrar multa de 2% apos o vencimento', 'Receber ate 2 dias apos o vencimento', 'Em caso de dividas entre em contato conosco: ', 'Emitido pelo sistema boleto.ml', '30');
+(1, 'Nome Empresa', 'Nome Fantasia', 'http://www.site.com.br/boletos', 'teste@teste.com.br', 'cnpj', 'endereço', 'nro', 'bairro', 'cidade', 'uf', 'cep', '63104a35bbb46f5.png', '3', '5', '0', '0,5', 2, 'Sr. Caixa, cobrar multa de 2% apos o vencimento', 'Receber ate 2 dias apos o vencimento', 'Em caso de dividas entre em contato conosco: ', 'Emitido pelo sistema boleto.ml', '30');
 
 -- --------------------------------------------------------
 
@@ -189,9 +187,8 @@ CREATE TABLE IF NOT EXISTS `faturas` (
 --
 
 INSERT INTO `faturas` (`id_venda`, `nosso_numero`, `modulo`, `codbanco`, `dbaixa`, `banco_receb`, `dv_receb`, `banco`, `id_cliente`, `grupoCliente`, `nome`, `ref`, `data`, `data_venci`, `valor`, `valor_recebido`, `situacao`, `condmail`, `emailcli`, `tipofatura`, `remessa`, `pedido`) VALUES
-(1035, 0, NULL, NULL, '2018-02-27', NULL, NULL, NULL, 13, 5, 'MAD DOG', 'aaaaaaaaaa', '2018-02-27', '2018-03-01', 110.00, 50.00, 'B', 1, 'maddog@caodeoculos.com', 'GRUPO', 0, 'b39d11fece9e6ad41d56d82ab57f289b'),
 (1036, 0, NULL, NULL, '2018-02-27', NULL, NULL, NULL, 14, 5, 'MARIA TERESESA', 'aaaaaaaaaa', '2018-02-27', '2018-03-01', 100.00, 100.00, 'B', 1, 'maria@terezaaaaa.com', 'GRUPO', 0, 'b39d11fece9e6ad41d56d82ab57f289b'),
-(1037, 1037, NULL, NULL, NULL, NULL, NULL, 'ITAU', 12, 4, 'DANILO', 'aaaaaaaaaaaaaaaa', '2018-02-27', '2018-02-28', 100.00, NULL, 'V', 0, 'danilomobr@gmail.com', 'AVULSO', 1, NULL),
+(1037, 1037, NULL, NULL, NULL, NULL, NULL, 'ITAU', 12, 4, 'JOSE', 'aaaaaaaaaaaaaaaa', '2018-02-27', '2018-02-28', 100.00, NULL, 'V', 0, 'jose@zzz.com', 'AVULSO', 1, NULL),
 (1044, 0, NULL, NULL, NULL, NULL, NULL, 'boleto', 19, 1, 'ALINE', '', '2018-03-02', '2018-03-05', 1.20, NULL, 'P', 0, 'aaa@aaaa.com', 'AVULSO', 0, NULL),
 (1045, 0, NULL, NULL, NULL, NULL, NULL, 'boleto', 45, 1, 'ANA', '', '2018-03-02', '2018-03-06', 15.00, NULL, 'P', 0, 'ana@aaa.com', 'AVULSO', 0, NULL),
 (1046, 0, NULL, NULL, NULL, NULL, NULL, 'boleto', 45, 1, 'ANA', '', '2018-03-02', '2018-03-06', 16.00, NULL, 'P', 0, 'ana@aaa.com', 'AVULSO', 0, NULL),
