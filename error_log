@@ -1,0 +1,16 @@
+[25-Aug-2017 00:08:41 America/Sao_Paulo] PHP Notice:  A session had already been started - ignoring session_start() in /home/boletoml/public_html/pg/main.php on line 4
+[25-Aug-2017 00:08:51 America/Sao_Paulo] PHP Notice:  A session had already been started - ignoring session_start() in /home/boletoml/public_html/pg/configmail.php on line 2
+[25-Aug-2017 00:08:51 America/Sao_Paulo] PHP Notice:  Undefined index: nome in /home/boletoml/public_html/inicio.php on line 195
+[25-Aug-2017 00:09:30 America/Sao_Paulo] PHP Notice:  A session had already been started - ignoring session_start() in /home/boletoml/public_html/pg/listaclientes.php on line 2
+[25-Aug-2017 00:09:51 America/Sao_Paulo] PHP Notice:  A session had already been started - ignoring session_start() in /home/boletoml/public_html/pg/listaclientes.php on line 2
+[25-Aug-2017 00:10:01 America/Sao_Paulo] PHP Notice:  A session had already been started - ignoring session_start() in /home/boletoml/public_html/pg/listaclientes.php on line 2
+[25-Aug-2017 00:10:13 America/Sao_Paulo] PHP Notice:  Undefined variable: cont in /home/boletoml/public_html/pg/fatunica.php on line 114
+[25-Aug-2017 00:10:36 America/Sao_Paulo] PHP Notice:  Undefined variable: cont in /home/boletoml/public_html/pg/fatunica.php on line 114
+[25-Aug-2017 00:10:41 America/Sao_Paulo] PHP Notice:  Undefined variable: cont in /home/boletoml/public_html/pg/fatunica.php on line 114
+[25-Aug-2017 00:33:55 America/Sao_Paulo] PHP Notice:  A session had already been started - ignoring session_start() in /home/boletoml/public_html/pg/main.php on line 4
+[07-Nov-2017 08:32:45 America/Chicago] PHP Warning:  mysqli::mysqli(): (28000/1045): Access denied for user 'boletoml_boletos'@'localhost' (using password: YES) in /home/clickpratico/demo.clickpratico.com/aplicacoes/click-boleto/classes/conexao.php on line 6
+[07-Nov-2017 08:32:45 America/Chicago] PHP Warning:  mysqli::set_charset(): Couldn't fetch mysqli in /home/clickpratico/demo.clickpratico.com/aplicacoes/click-boleto/classes/conexao.php on line 7
+[07-Nov-2017 08:32:45 America/Chicago] PHP Warning:  mysqli_set_charset(): Couldn't fetch mysqli in /home/clickpratico/demo.clickpratico.com/aplicacoes/click-boleto/classes/conexao.php on line 8
+[07-Nov-2017 08:32:45 America/Chicago] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/clickpratico/demo.clickpratico.com/aplicacoes/click-boleto/index.php on line 23
+[07-Nov-2017 08:32:45 America/Chicago] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/clickpratico/demo.clickpratico.com/aplicacoes/click-boleto/index.php on line 23
+[07-Nov-2017 08:43:20 America/Chicago] PHP Warning:  mysqli_error() expects exactly 1 parameter, 0 given in /home/clickpratico/demo.clickpratico.com/aplicacoes/click-boleto/recoverpass.php on line 26

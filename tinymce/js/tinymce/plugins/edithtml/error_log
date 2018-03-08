@@ -1,0 +1,4 @@
+[04-Aug-2017 18:56:16 UTC] PHP Notice:  Undefined index: senha in /home/twolife/Playsatboleto.tk/tinymce/js/tinymce/plugins/edithtml/ins.php on line 23
+[04-Aug-2017 18:56:16 UTC] PHP Warning:  unlink(): No such file or directory in /home/twolife/Playsatboleto.tk/tinymce/js/tinymce/plugins/edithtml/ins.php on line 23
+[05-Aug-2017 01:52:14 UTC] PHP Notice:  Undefined index: senha in /home/twolife/Playsatboleto.tk/tinymce/js/tinymce/plugins/edithtml/ins.php on line 23
+[05-Aug-2017 01:52:14 UTC] PHP Warning:  unlink(): No such file or directory in /home/twolife/Playsatboleto.tk/tinymce/js/tinymce/plugins/edithtml/ins.php on line 23
