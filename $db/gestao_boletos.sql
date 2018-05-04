@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 04-Maio-2018 às 04:32
+-- Generation Time: 05-Maio-2018 às 01:48
 -- Versão do servidor: 10.1.21-MariaDB
 -- PHP Version: 7.1.1
 
@@ -54,7 +54,7 @@ CREATE TABLE `bancos` (
 
 INSERT INTO `bancos` (`id_banco`, `nome_banco`, `carteira`, `agencia`, `digito_ag`, `conta`, `digito_co`, `especie`, `nosso_numero`, `tipo_cobranca`, `convenio`, `contrato`, `tipo_carteira`, `situacao`, `img`, `img2`, `link`, `increment`, `tokem`) VALUES
 (1, 'BANCO DO BRASIL', '10', 3307, 3, '231', '', '26', 0, '2', '1234567', '', '', 0, 'bb.png', 'bb2.png', 'boleto_bb.php', 100, ''),
-(2, 'BRADESCO', '09', 1919, 2, '1000043', '2', '', 0, '', '0043-2', '', 'SR', 1, 'bradesco.png', 'bradesco2.png', 'boleto_bradesco.php', 100, ''),
+(2, 'BRADESCO', '01', 1111, 2, '1111111', '2', '', 0, '', '1111-2', '', 'SR', 1, 'bradesco.png', 'bradesco2.png', 'boleto_bradesco.php', 100, ''),
 (3, 'CAIXA ECONOMICA', '02', 3139, 0, '037950', '2', '', 0, '', '379502', '100500', 'SR', 0, 'caixa.png', 'caixa2.png', 'boleto_cef_sigcb.php', 100, ''),
 (4, 'ITAU', '200', 256, 0, '77777', '3', '99', 0, '', '', '', '', 0, 'itau.png', 'itau2.png', 'boleto_itau.php', 100, '');
 
@@ -148,7 +148,7 @@ CREATE TABLE `config` (
 --
 
 INSERT INTO `config` (`id`, `nome`, `fantasia`, `url`, `email`, `cpf`, `endereco`, `numero`, `bairro`, `cidade`, `uf`, `cep`, `logo`, `receber`, `dias`, `multa_atraso`, `juro`, `protesto`, `demo1`, `demo2`, `demo3`, `demo4`, `qnt`) VALUES
-(1, 'Nome Empresa', 'Nome Fantasia', 'http://www.site.com.br/boletos', 'teste@teste.com.br', 'cnpj', 'endereço', 'nro', 'bairro', 'cidade', 'uf', 'cep', '63104a35bbb46f5.png', '3', '5', '0', '0,5', 2, 'Sr. Caixa, cobrar multa de 2% apos o vencimento', 'Receber ate 2 dias apos o vencimento', 'Em caso de dividas entre em contato conosco: ', 'Emitido pelo sistema boleto.ml', '30');
+(1, 'PL GOLFE CLUBE', 'PL GOLFE CLUBE', 'http://www.site.com.br/boletos', 'teste@teste.com.br', 'cnpj', 'endereço', 'nro', 'bairro', 'cidade', 'uf', 'cep', '63104a35bbb46f5.png', '3', '5', '0', '0,5', 2, 'Sr. Caixa, cobrar multa de 2% apos o vencimento', 'Receber ate 2 dias apos o vencimento', 'Em caso de dividas entre em contato conosco: ', 'Emitido pelo sistema boleto.ml', '30');
 
 -- --------------------------------------------------------
 
@@ -233,7 +233,8 @@ INSERT INTO `flux_entrada` (`id_entrada`, `tipo`, `data`, `id_plano`, `descricao
 (2, 'D', '2017-07-12', 0, '1234', '2.34'),
 (3, '', '2018-03-02', 3, 'ok', '10.00'),
 (4, 'R', '2018-03-02', 3, 'aaaaaaaaa', '10.00'),
-(5, 'D', '2018-03-02', 3, 'bbbbb', '2.00');
+(5, 'D', '2018-03-02', 3, 'bbbbb', '2.00'),
+(6, 'D', '2018-05-01', 0, 'testeeee', '100.00');
 
 -- --------------------------------------------------------
 
@@ -513,7 +514,7 @@ ALTER TABLE `bancos`
 -- AUTO_INCREMENT for table `cliente`
 --
 ALTER TABLE `cliente`
-  MODIFY `id_cliente` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `id_cliente` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 --
 -- AUTO_INCREMENT for table `config`
 --
@@ -533,7 +534,7 @@ ALTER TABLE `financeiro`
 -- AUTO_INCREMENT for table `flux_entrada`
 --
 ALTER TABLE `flux_entrada`
-  MODIFY `id_entrada` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_entrada` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `flux_fixas`
 --
@@ -573,7 +574,7 @@ ALTER TABLE `sequencial`
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_usuario` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
