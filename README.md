@@ -16,6 +16,7 @@ Projeto criado para geração de boletos bancários com lançamento de faturas e
 
 - PHP
 - JS
+- Jquery
 - CSS
 
 ## Instalação
@@ -35,9 +36,14 @@ Feito isso, importe o arquivo $db/gestao_boletos.sql para o seu MySql.
 ## Conexão
 
 Para acessar o painel entre com o seguinte login:
+
 	- Usuário: admin
 	- Senha: admin
 	
+## Licença
+
+Gestão de Boletos está licenciado por <a href="LICENSE">The MIT License (MIT)</a>.
+
 ## Screenshots
 
 ![Screenshots](screenshots/screenshot01.png)<br><br>
