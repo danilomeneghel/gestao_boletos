@@ -42,7 +42,7 @@ Para acessar o painel entre com o seguinte login:
 	
 ## Licença
 
-Gestão de Boletos está licenciado por <a href="LICENSE">The MIT License (MIT)</a>.
+Gestão de Boletos está licenciado por <a href="LICENSE">GNU GENERAL PUBLIC LICENSE</a>.
 
 ## Screenshots
 
