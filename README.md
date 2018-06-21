@@ -12,6 +12,11 @@ Projeto criado para geração de boletos bancários com lançamento de faturas e
 - Lançamento de Faturas
 - Fluxo de Caixa
 
+## Requisitos
+- Apache
+- PHP >= 5.5.9
+- MySql >=5
+
 ## Tecnologias
 
 - PHP
